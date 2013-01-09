@@ -41,130 +41,21 @@ $iconMuted:         #eee !default
  *  -------------------------------------------------------
  * includes sprites.less reset */
 
-
 [class^="icon-"], [class*=" icon-"]
-  font-family: FontAwesome
-  font-weight: normal
-  font-style: normal
-  text-decoration: inherit
-  display: inline
-  width: auto
-  height: auto
-  line-height: normal
-  vertical-align: baseline
-  background-image: none !important
-  background-position: 0% 0%
-  background-repeat: repeat
-
-[class^="icon-"]:before, [class*=" icon-"]:before
-  text-decoration: inherit
-  display: inline-block
-  speak: none
-
-/* makes sure icons active on rollover in links */
-
-a
-  [class^="icon-"], [class*=" icon-"]
+  &:before
+    text-decoration: inherit
     display: inline-block
-
-/* makes the font 33% larger relative to the icon container */
-
-.icon-large:before
-  vertical-align: -10%
-  font-size: 1.3333333333333333em
-
-.btn, .nav
-  [class^="icon-"], [class*=" icon-"]
+    speak: none
+    font-family: FontAwesome
+    font-weight: normal
+    font-style: normal
+    text-decoration: inherit
     display: inline
-    /* keeps button heights with and without icons the same */
-    line-height: .6em
-    &.icon-spin
-      display: inline-block
+    width: auto
+    height: auto
+    line-height: normal
+    vertical-align: baseline
 
-li
-  [class^="icon-"], [class*=" icon-"]
-    display: inline-block
-    width: 1.25em
-    text-align: center
-    &.icon-large
-      /* increased font size for icon-large */
-      width: 1.25*1.25em
-
-ul.icons
-  list-style-type: none
-  text-indent: -.75em
-
-  li
-    [class^="icon-"], [class*=" icon-"]
-      width: .75em
-
-.icon-muted
-  color: $iconMuted
-
-// Icon Borders
-// -------------------------
-
-.icon-border
-  border: solid 1px $borderColor
-  padding: .2em .25em .15em
-  @include border-radius(3px)
-
-// Icon Sizes
-// -------------------------
-
-.icon-2x
-  font-size: 2em
-  &.icon-border
-    border-width: 2px
-    @include border-radius(4px)
-
-.icon-3x
-  font-size: 3em
-  &.icon-border
-    border-width: 3px
-    @include border-radius(5px)
-
-.icon-4x
-  font-size: 4em
-  &.icon-border
-    border-width: 4px
-    @include border-radius(6px)
-
-// Floats
-// -------------------------
-
-// Quick floats
-.pull-right
-  float: right
-
-.pull-left
-  float: left
-
-[class^="icon-"], [class*=" icon-"]
-  &.pull-left
-    margin-right: .35em
-  &.pull-right
-    margin-left: .35em
-
-.btn
-  [class^="icon-"], [class*=" icon-"]
-    &.pull-left, &.pull-right
-      &.icon-2x
-        margin-top: .35em
-    &.icon-spin.icon-large
-      height: .75em
-
-.btn.btn-small
-  [class^="icon-"], [class*=" icon-"]
-    &.pull-left, &.pull-right
-      &.icon-2x
-        margin-top: .45em
-
-.btn.btn-large
-  [class^="icon-"], [class*=" icon-"]
-    &.pull-left, &.pull-right
-      &.icon-2x
-        margin-top: .2em
 
 
 .icon-spin
